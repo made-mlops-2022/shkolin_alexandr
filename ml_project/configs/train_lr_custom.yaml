@@ -1,0 +1,14 @@
+input_data_path: "data/raw/train.csv"
+save_model_path: "models/lr_custom.pkl"
+
+columns_params:
+  target: "is_canceled"
+
+train_params:
+  penalty: "l1"
+  solver: "saga"
+  max_iter: 5000
+
+splitting_params:
+  test_size: 0.1
+  random_state: 42
